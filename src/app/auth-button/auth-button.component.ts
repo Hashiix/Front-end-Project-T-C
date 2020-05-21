@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-auth-button',
+  templateUrl: './auth-button.component.html',
+  styleUrls: ['./auth-button.component.scss']
 })
-export class AppComponent implements OnInit {
-  title = 'front-end-project';
+export class AuthButtonComponent implements OnInit {
 
   public gapiSetup: boolean = false; // marks if the gapi library has been loaded
   public authInstance: gapi.auth2.GoogleAuth;
