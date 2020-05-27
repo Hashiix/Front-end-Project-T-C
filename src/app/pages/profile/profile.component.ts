@@ -17,10 +17,10 @@ export class ProfileComponent implements OnInit {
 
   ngOnInit ()  {
     this.formulaire = this.fb.group({ 
-      username: ['', Validators.required],
-      status: [''], 
-      password: ['', Validators.required],
-      confirmPassword: ['', Validators.required],
+      username: ['Déyris', Validators.required],
+      status: ['Connecté'], 
+      password: ['projet', Validators.required],
+      confirmPassword: ['projet', Validators.required],
     });
     // // validator: MustMatch('password', 'confirmPassword')
     // });
@@ -29,9 +29,9 @@ export class ProfileComponent implements OnInit {
   onSubmit() {
     this.submitted = true;
 
-    // if (this.formulaire.invalid) {
-    //   return; 
-    // }
+    if (this.formulaire.invalid) {
+      return; 
+    }
 
     alert("Vos modifications ont bien été enregistrées !");
 
