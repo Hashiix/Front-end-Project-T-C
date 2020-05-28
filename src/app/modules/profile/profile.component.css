@@ -28,24 +28,23 @@ header {
 form {
     background-color : #eaebf3;
     margin: 0 auto;
-    width: 80%;
+    width: 50%;
     border: 1px ridge grey;
-    padding-top: 10px;
     border-radius: 5px;
 }
 
 .form-group {
     display: block;
     margin: 0 auto;
-    width: 80%;
+    /* width: 50%;  */
 }
 
 label {
     display: block;
-    margin: 0 auto;
-    width: 70%;
+    margin: 10px auto 15px;
+    width: 50%;
+    font-size: large;
     font-weight: bold;
-    font-style: italic;
     color: #000000;
 }
 

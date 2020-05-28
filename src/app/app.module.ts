@@ -4,7 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
-import { ProfileComponent } from './pages/profile/profile.component';
+import { ProfileComponent } from './modules/profile/profile.component';
 import { RouterModule } from '@angular/router';
 import { Routes } from '@angular/router';
 
@@ -28,6 +28,6 @@ const routes: Routes = [
     RouterModule
   ],
   providers: [ProfileComponent],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, ProfileComponent]
 })
 export class AppModule { }
