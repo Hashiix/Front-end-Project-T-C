@@ -8,7 +8,7 @@ import { FormControl } from "@angular/forms";
 })
 export class AppComponent implements OnInit{
   title = 'front-end-project';
-  
+
 
   constructor() {
 

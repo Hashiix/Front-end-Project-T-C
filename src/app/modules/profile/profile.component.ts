@@ -26,7 +26,7 @@ export class ProfileComponent implements OnInit {
 
     if (this.profileForm.invalid) {
       return;
-  } else {
+    } else {
     alert("Vos modifications ont bien été enregistrées !");
   }
 
