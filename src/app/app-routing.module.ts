@@ -7,8 +7,9 @@ import { ProfileComponent } from './modules/profile/profile.component';
 
 const routes: Routes = [
   { path: '', component: HomeOfflineComponent },
-  { path: 'home-online', component: HomeOnlineComponent},
-  { path: 'profile', component: ProfileComponent }
+  { path: 'home', component: HomeOnlineComponent},
+  { path: 'profile', component: ProfileComponent },
+  { path: '**', component: HomeOfflineComponent},
 ];
 
 
