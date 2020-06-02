@@ -4,19 +4,16 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
-import { ProfileComponent } from './modules/profile/profile.component';
 import { RouterModule } from '@angular/router';
 import { Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', component: AppComponent, },
-  { path: 'profile', component: ProfileComponent }
+  { path: '', component: AppComponent, }
 ];
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ProfileComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +24,7 @@ const routes: Routes = [
   exports: [
     RouterModule
   ],
-  providers: [ProfileComponent],
-  bootstrap: [AppComponent, ProfileComponent]
+  providers: [],
+  bootstrap: []
 })
 export class AppModule { }
