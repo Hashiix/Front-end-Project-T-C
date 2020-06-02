@@ -6,7 +6,6 @@ import { ProfileComponent } from './modules/profile/profile.component';
 const routes: Routes = [
   { path: '', component: HomeOfflineComponent },
   { path: 'profile', component: ProfileComponent }
-
 ];
 
 

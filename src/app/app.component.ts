@@ -6,18 +6,5 @@ import { FormControl } from "@angular/forms";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
-  title = 'front-end-project';
 
-
-  constructor() {
-
-  }
-
-  ngOnInit ()  {
-    
-  }
-
-
-
-}
+export class AppComponent { }
