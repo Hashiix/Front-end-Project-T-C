@@ -1,4 +1,7 @@
 /* HEADER */
+html {
+  background-color: white;
+}
 
 .header{
   height: 100px;
