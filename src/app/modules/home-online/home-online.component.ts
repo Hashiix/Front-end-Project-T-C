@@ -14,7 +14,5 @@ export class HomeOnlineComponent implements OnInit {
 
   disconnect() {
     localStorage.removeItem('userToken');
-    document.location.href = 'http://localhost:4200/';
   }
-
 }
