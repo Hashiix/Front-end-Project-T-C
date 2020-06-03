@@ -7,11 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeOnlineComponent implements OnInit {
 
-  title = 'front-end-project';
-
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  disconnect() {
+    localStorage.removeItem('userToken');
+    document.location.href = 'http://localhost:4200/';
   }
 
 }
