@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-offline.component.css']
 })
 export class HomeOfflineComponent  implements OnInit {
-  title = 'front-end-project';
 
   public gapiSetup: boolean = false; // marks if the gapi library has been loaded
   public authInstance: gapi.auth2.GoogleAuth;

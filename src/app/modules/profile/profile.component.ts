@@ -21,13 +21,12 @@ export class ProfileComponent implements OnInit {
   }
 
   onSubmit() {
-    
     this.submitted = true;
 
     if (this.profileForm.invalid) {
       return;
     } else {
-    alert("Vos modifications ont bien été enregistrées !");
+    alert('Vos modifications ont bien été enregistrées !');
   }
 
   }
