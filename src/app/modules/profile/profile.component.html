@@ -1,3 +1,4 @@
+<html>
 <header>
     <img id="logo" src="https://pbs.twimg.com/profile_images/1115636075685449730/18kuxYT7_400x400.png">
 </header>
@@ -13,7 +14,7 @@
             <input type="text" formControlName="name" class="form-control">
             <div *ngIf="submitted">
                 <div *ngIf="this.profileForm.controls.name.errors" class="alert alert-danger">
-                Votre pseudonyme est requis.</div>   
+                Votre pseudonyme est requis.</div>
             </div>
         </label>
     </div>
@@ -31,11 +32,12 @@
 
     <div class="form-group">
         <label>
-        Mot de Passe            
+        Mot de Passe
         <input type="password" formControlName="password" class="form-control">
         </label>
     </div>
 
     <button type="submit" class="btn btn-success">Enregistrer</button>
-    
+
 </form>
+</html>
