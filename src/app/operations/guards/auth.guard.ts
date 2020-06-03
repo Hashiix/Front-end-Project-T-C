@@ -18,6 +18,5 @@ export class AuthGuard implements CanActivate {
       document.location.href = 'http://localhost:4200/';
     }
     return isLoggedIn;
-
   }
 }
