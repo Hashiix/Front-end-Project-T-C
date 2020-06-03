@@ -49,6 +49,7 @@ export class HomeOfflineComponent  implements OnInit {
       await this.authInstance.signIn().then(
         user => this.user = user,
         error => this.error = error);
+        document.location.href = 'http://localhost:4200/home';
     });
   }
 
