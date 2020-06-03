@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterModule } from "@angular/router";
 
 @Component({
   selector: 'app-home-offline',
@@ -50,7 +49,14 @@ export class HomeOfflineComponent  implements OnInit {
       await this.authInstance.signIn().then(
         user => this.user = user,
         error => this.error = error);
-        document.location.href = 'http://localhost:4200/home';
+        if (!this.error) {
+          localStorage.setItem('userToken', 'connected');
+          document.location.href = 'http://localhost:4200/home';
+        }
+        else {
+          localStorage.removeItem('userToken');
+          window.location.reload();
+        }
     });
   }
 
