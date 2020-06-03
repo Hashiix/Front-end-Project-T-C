@@ -8,14 +8,20 @@
   /*position: fixed;*/
 
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-
 }
 
 .title {
   font-family: 'Viga', sans-serif;
   font-size: 50px;
+  margin-left: 40%;
+}
+
+.navbar {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
 }
 
 
