@@ -16,4 +16,7 @@ export class HomeOnlineComponent implements OnInit {
   disconnect() {
     localStorage.removeItem('userToken');
   }
+
 }
+
+

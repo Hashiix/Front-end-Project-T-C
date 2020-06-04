@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { HomeOfflineComponent } from './modules/home-offline/home-offline.component';
 import { ProfileComponent } from './modules/profile/profile.component';
 import { AppRoutingModule } from './app-routing.module';
+import {HttpClientModule} from"@angular/common/http";
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,7 @@ import { AppRoutingModule } from './app-routing.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
   ],
