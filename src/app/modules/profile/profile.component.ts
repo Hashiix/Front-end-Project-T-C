@@ -27,12 +27,13 @@ export class ProfileComponent implements OnInit {
     if (this.profileForm.invalid) {
       return;
     } else {
-    alert('Vos modifications ont bien été enregistrées !');
+
+    alert('Vos modifications suivantes ont bien été enregistrées : \n\n' + JSON.stringify(this.profileForm.value, null, 1));
     }
   }
 
   disconnect() {
     localStorage.removeItem('userToken');
   }
-
+  
 }

@@ -1,90 +1,103 @@
 html {
-  background-color: white !important;
-}
-
-
-/******************* Header ***********************/
-
-header {
-    height: 90px;
-    background-color: #3b429e;
-    display: flex;
-    justify-content: space-between;
-}
-
-#logo {
-    margin-left: 41%;    
-}
-
-#logout {
-    height: 55px;
-    margin: 15px;
-    padding-top: 5px;
-    margin-right: 58px;
-}
-
-
-/******************* Principal Column *****************************/
-
-.container {
-    background: whitesmoke;
-    width: 70%;
-    border: 1px solid transparent;
-}
-
-    /**************** Profile Picture ******************************/
-
-    #files {
-        width: 0px;
-    }
-
-    .pictureFile {
-        border: 5px dotted black;
-        height: 200px;
-        width: 200px;
-        padding-top: 60px;
-    }
-
-    #avatar {
-        margin-bottom: 80px;
-    }
-    
-
-    /*************** Form *********************************/
-
-    form {
-        background-color : rgba(0,0,0,.03);
-        margin: 0 auto 15px;
-        padding: 10px;
-        width: 70%;
-        border: 1px solid rgba(0,0,0,.125);
-        border-radius: 5px;
-    }
-
-    .form-control {
-        font-size: smaller;
-    }
-
-    label {
-        display: block;
-        margin: 10px auto 15px;
-        width: 80%;
-        font-size: x-large;
-        font-family: Jost;
-        color: #000000;
-    }
-
-    /*************** Area(s) required **********************/
-    .alert {
-        padding: 5px;
-        margin-bottom: 25px;
-    }
-
-/*************** Buttons ****************************/
-.btn {
-    border-radius: 10px;
-    display: block;
-    font-family: Jost;
-    font-size: x-large;
-    margin-inline-start: auto;
-}
+    background-color: white !important;
+  }
+  
+  
+  /******************* Header ***********************/
+  
+  header {
+      height: 90px;
+      background-color: #3b429e;
+      display: flex;
+      justify-content: space-between;
+      position: fixed;
+      width: 100%;
+      z-index: 1;
+      box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.45);
+  }
+  
+  #logo {
+      margin-left: 41%;    
+  }
+  
+  #logout {
+      height: 55px;
+      margin: 15px;
+      padding-top: 5px;
+      margin-right: 58px;
+  }
+  
+  .space {
+      height: 90px;
+  }
+  
+  /******************* Principal Column *****************************/
+  
+  .container {
+      background: whitesmoke;
+      width: 70%;
+      /* height: 84vh; */
+      margin: 20px auto;
+      padding: 20px;
+      -webkit-box-shadow: 0px 0px 76px 1px rgba(0,0,0,0.45);
+      -moz-box-shadow: 0px 0px 76px 1px rgba(0,0,0,0.45);
+      box-shadow: 0px 0px 76px 1px rgba(0,0,0,0.45);
+  }
+  
+      /**************** Profile Picture ******************************/
+  
+      #files {
+          width: 0px;
+      }
+  
+      .pictureFile {
+          border: 5px dotted black;
+          height: 200px;
+          width: 200px;
+          padding-top: 60px;
+      }
+  
+      #avatar {
+          margin-bottom: 40px;
+      }
+      
+  
+      /*************** Form *********************************/
+  
+      form {
+          background-color : rgba(0,0,0,.03);
+          margin: 0 auto;
+          padding: 10px;
+          width: 70%;
+          border: 1px solid rgba(0,0,0,.125);
+          border-radius: 5px;
+      }
+  
+      .form-control {
+          font-size: smaller;
+      }
+  
+      label {
+          display: block;
+          margin: 10px auto 15px;
+          width: 80%;
+          font-size: x-large;
+          font-family: Jost;
+          color: #000000;
+      }
+  
+      /*************** Area(s) required **********************/
+      .alert {
+          padding: 5px;
+          margin-bottom: 25px;
+      }
+  
+  /*************** Buttons ****************************/
+  .btn {
+      border-radius: 10px;
+      display: block;
+      font-family: Jost;
+      font-size: x-large;
+      margin-inline-start: auto;
+  }
+  
