@@ -28,8 +28,11 @@ export class ProfileComponent implements OnInit {
       return;
     } else {
     alert('Vos modifications ont bien été enregistrées !');
+    }
   }
 
+  disconnect() {
+    localStorage.removeItem('userToken');
   }
 
 }
