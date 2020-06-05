@@ -1,21 +1,34 @@
 <html>
 
 <div class="header">
-  <img class="title" src="../../assets/img/Tech&Talk.png" width="400" height="70">
-  <div class="navbar">
-    <a href="profile"><img src="../../assets/img/profile.png" width="50" height="50"></a>
-    <a href=""><img src="../../assets/img/logout.png" width="50" height="50" (click)="disconnect()"></a>
-  </div>
+    <img class="title" src="../../assets/img/Tech&Talk.png" width="400" height="70">
+    <div class="navbar">
+        <a href="profile"><img src="../../assets/img/profile.png" width="50" height="50"></a>
+        <a href=""><img src="../../assets/img/logout.png" width="50" height="50" (click)="disconnect()"></a>
+    </div>
 </div>
 
-<div class="mainContainer">
-  <div class="newArticle">
-    <textarea class="textNewArticle"></textarea>
-    <button class="addArticle">Send</button>
-  </div>
-  <div class="column">
-    <!-- ADD LIST ARTICLES -->
-  </div>
-</div>
+<!--<div class="mainContainer">
+    <div class="newArticle">
+        <textarea class="textNewArticle"></textarea>
+        <button class="addArticle">Send</button>
+    </div>
+    <div class="column">
+        /* ADD LIST ARTICLES */
+    </div> -->
+
+<form [formGroup]="article" (ngSubmit)="login()">
+    <div class="form-group">
+        <label>Exprimez-vous
+          <input id=test type="text" class="form-control" formControlName="contenu" >
+        </label> <br/>
+
+
+    </div>
+
+    <button on-click="login()" type="submit" class="btn btn-primary">valide</button>
+    <!---->
+</form>
+
 
 </html>

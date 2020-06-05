@@ -1,5 +1,8 @@
-import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import {Component, OnInit, ViewEncapsulation,Injectable} from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import {HttpClient} from'@angular/common/http';
+
+@Injectable()
 
 @Component({
   selector: 'app-profile',
@@ -11,7 +14,7 @@ export class ProfileComponent implements OnInit {
       profileForm = new FormGroup({});
       submitted = false;
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder, private httpClient : HttpClient) { }
 
   ngOnInit() {
      this.profileForm = this.fb.group({
@@ -28,6 +31,7 @@ export class ProfileComponent implements OnInit {
       return;
     } else {
     alert('Vos modifications ont bien été enregistrées !');
+    this.httpClient.post('https://http-client-c2793.firebaseio.com/article.json',this.profileForm.value)
   }
 
   }

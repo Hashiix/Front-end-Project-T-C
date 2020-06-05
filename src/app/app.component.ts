@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {BddService} from './services/bdd.services'
 
 
 @Component({
