@@ -11,6 +11,10 @@ header {
   z-index: 1;
   position: fixed;
   box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.45);
+<<<<<<< HEAD
+=======
+
+>>>>>>> d0012042b35b46bc219df800d3e577f05501ceaa
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,7 +31,7 @@ header {
 }
 
 .profile {
-  margin-left: 30%;
+  margin-left: 50%;
 }
 
 
