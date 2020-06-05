@@ -11,7 +11,6 @@ header {
   z-index: 1;
   position: fixed;
   box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.45);
-
   display: flex;
   justify-content: space-between;
   align-items: center;
