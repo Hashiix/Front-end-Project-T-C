@@ -25,3 +25,18 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+
+# For Docker :
+
+
+- install Docker on this link : https://docs.docker.com/get-docker/.
+
+- Run Docker application.
+
+- Run terminal and in the project file, type `docker-compose up`.
+
+- Navigate to `http://localhost:4200/`.
+
+You can modify the port in docker-compose.yml.
