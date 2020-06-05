@@ -1,21 +1,43 @@
 <html>
 
-<div class="header">
-  <img class="title" src="../../assets/img/Tech&Talk.png">
+<header>
+  <a href="home" class="title"><img src="../../assets/img/Tech&Talk.png"></a>
+
   <div class="navbar">
-    <a href="profile"><img src="../../assets/img/profile.png" width="50" height="50"></a>
+
+    <a href="profile" class="profile"><img src="../../assets/img/profile.png" width="50" height="50"></a>
     <a href=""><img src="../../assets/img/logout.png" width="50" height="50" (click)="disconnect()"></a>
+
   </div>
-</div>
+</header>
 
 <div class="mainContainer">
+
   <div class="newArticle">
+
+    <p class="titleNewArticle">Ajouter un article</p>
     <textarea class="textNewArticle"></textarea>
-    <button class="addArticle">Send</button>
+    <button class="buttonAddArticle">Envoyer</button>
+
   </div>
-  <div class="column">
-    <!-- ADD LIST ARTICLES -->
+
+  <div class="listArticle">
+
+    <div class="Article">
+
+      <div class="user">
+
+        <img class="userPicture" src="../../assets/img/profile.png" width="70" height="70">
+        <p class="userName">Pierre-Emmanuel Dacquet</p>
+
+      </div>
+
+      <p class="textArticle">Ceci est un message.</p>
+
+    </div>
+
   </div>
+
 </div>
 
 </html>
